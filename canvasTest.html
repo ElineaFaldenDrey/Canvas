@@ -1,22 +1,35 @@
-<canvas width="500px" height"500">
-	Installe Chrome https://www.google.fr/chrome/browser/desktop
- // CHECK https://openclassrooms.com/courses/creer-un-mini-rpg-en-javascript-avec-canvas
-
- https://developer.mozilla.org/fr/docs/Tutoriel_canvas
- https://www.alsacreations.com/tuto/lire/1484-introduction.html
- https://javascript.developpez.com/tutoriels/html5/creer-moteur-affichage-2d-html5/
- https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript
- http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/
- http://blog.sklambert.com/category/tutorials/
- https://www.youtube.com/watch?v=VLpjfr7mgT0
- https://www.html5rocks.com/en/tutorials/canvas/notearsgame/
- https://phaser.io/
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Canavs Test </title>
+	</head>	
+	<body>
+			<canvas id="mon_canvas" width="350" height="350">
+			Installe Chrome https://www.google.fr/chrome/browser/desktop
+			</canvas>
+	
+		
 	 
 	  
 
+	  		<script type="text/javascript">
+
+	  			var c = document.getElementById("mon_canvas");
+  				var ctx = c.getContext("2d");
+  				/////////////////////////////////////////////
+
+  				ctx.beginPath();
+  				ctx.moveTo(50,50);
+  				ctx.lineTo(200,200);
+  				ctx.moveTo(200,50);
+  				ctx.lineTo(50,200);
+  				ctx.closePath();
+  				ctx.stroke();
+		
+			</script>
+	</body>
+</html>		  
 	  
-	  
 
 
 
-</canvas>
